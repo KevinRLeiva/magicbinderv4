@@ -20,7 +20,7 @@ Array.from(magicCard).forEach(function(element){
     e.preventDefault();
     currentIndex = 0;
     var cardName = document.getElementById("nameCard").value;
-    fetch(`http://api.magicthegathering.io/v1/cards?name=${cardName}`)
+    fetch(`https://api.magicthegathering.io/v1/cards?name=${cardName}`)
     .then(res=>res.json())
     .then(response =>{
       let searchCard = document.getElementById("magic");
