@@ -22,7 +22,7 @@ Array.from(trash).forEach(function(element) {
 document.getElementById("cardSearch").addEventListener("click", function(e){
   e.preventDefault();
   var cardName = document.getElementById("nameCard").value;
-  fetch(`http://api.magicthegathering.io/v1/cards?name=${cardName}`)
+  fetch(`https://api.magicthegathering.io/v1/cards?name=${cardName}`)
   .then(res=>res.json())
   .then(response =>{
     let searchCard = document.getElementById("magic");
